@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Portfolio Website" name="author">
+
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>Vedant Sakpal - Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Oswald", sans-serif;
+      color: white;
+      background-color: #121212;
+    }
+
+    .minimal {
+      overflow: hidden;
+    }
+
+    
+    .background-image-container {
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero-full-wrapper {
+      text-align: center;
+    }
+
+    nav.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 10px 0;
+    }
+
+    .navbar-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .navbar-nav a {
+      color: white;
+      padding: 0 15px;
+      text-decoration: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .navbar-nav a:last-child {
+      border-right: none;
+    }
+
+    .navbar-nav a:hover {
+      color: #f8c471;
+    }
+
+    footer {
+      color: rgba(255, 255, 255, 0.966);
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+
+
+<body class="minimal">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+
+
+  <header>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li><a href="./index.html">01 : Home</a></li>
+        <li><a href="./works.html">02 : Works</a></li>
+        <li><a href="./about.html">03 : About me</a></li>
+        <li><a href="./contact.html">04 : Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero-full-container background-image-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="hero-full-wrapper">
+            <div class="text-content text-center">
+              <h1>Hello,<br>
+                <span id="typed-strings">
+                  <span>I'm Vedant Sakpal</span>
+                  <span>Technology Enthusiast</span>
+                  <span>Learning and Creating</span>
+                </span>
+                <span id="typed"></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>© 2024 Vedant Sakpal</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const options = {
+        stringsElement: '#typed-strings',
+        typeSpeed: 70,
+        backSpeed: 25,
+        loop: true,
+      };
+
+      const typed = new Typed('#typed', options);
+    });
+
+    
+  </script>
+</body>
+
+</html>

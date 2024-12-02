@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Portfolio Website" name="author">
+
+
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>Vedant Sakpal - About Me</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Oswald", sans-serif;
+      color: white;
+      background-color: #121212;
+    }
+
+    nav.navbar {/* Transparent black background */  
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 10px 0;
+    }
+
+    .navbar-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .navbar-nav a {
+      color: white;
+      padding: 0 15px;
+      text-decoration: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .navbar-nav a:last-child {
+      border-right: none;
+    }
+
+    .navbar-nav a:hover {
+      color: #f8c471;
+    }
+
+    .section-container {
+      padding: 60px 15px;
+      color: white;
+      text-align: center;
+    }
+
+    .section-container h1 {
+      margin-bottom: 40px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .about-content .text-section,
+    .about-content .image-section {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+    }
+
+    .about-content .text-section h3 {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #f8c471;
+    }
+
+    .about-content .text-section p {
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .about-content .image-section img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    footer a {
+      color: #f8c471;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+
+
+  <header>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li><a href="./index.html">01 : Home</a></li>
+        <li><a href="./works.html">02 : Works</a></li>
+        <li><a href="./about.html" class="active">03 : About Me</a></li>
+        <li><a href="./contact.html">04 : Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="section-container">
+    <h1>About Me</h1>
+    <div class="about-content">
+
+      <div class="text-section">
+        <h3>Who Am I?</h3>
+        <p>Hello, I'm Vedant Sakpal, an Electronics and Computer Science engineering student from Fr. Conceicao Rodrigues College of Engineering, currently pursuing a minor in Data Science with a CGPA of 8.07/10. I'm passionate about leveraging technology to create innovative solutions and exploring cutting-edge advancements in various domains. I thrive on solving complex challenges and collaborating on meaningful projects.</p>
+        <h3>My Skills</h3>
+        <p>I specialize in a wide range of programming languages and frameworks, including ReactJS, Python, and Node.js, complemented by strong expertise in MongoDB, Tailwind CSS, and Bootstrap. Additionally, I am proficient in tools and technologies like GIS, Jupyter Notebook, and UiPath. My robust technical skills are further reinforced by certifications from Meta in Advanced React, Version Control, and Programming with JavaScript.</p>
+        <h3>Achievements and Projects</h3>
+        <p>
+          - <b>AI-based Assessment App System</b>: Developed an accessible assessment application using React Native. It features voice feedback, intuitive navigation, and adaptive assessments tailored for individuals with disabilities.<br>
+          - <b>Marine Debris Detection</b>: Created a system leveraging satellite imagery and machine learning models to identify and track floating and underwater debris, contributing to marine conservation efforts.<br>
+          - <b>Professional Experience</b>: As a Web Developer Intern at Kindness Unlimited and a Python Developer Intern at Eduvance, I contributed to impactful projects, including automation and web development, significantly improving team efficiency and productivity.
+        </p>
+    </div>
+
+
+      <div class="image-section" height="200px">
+        <img src="./assets/images/profile.jpeg" alt="Vedant Sakpal">
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>© 2024 Vedant Sakpal | Portfolio Website</p>
+  </footer>
+</body>
+
+</html>
